@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Nevada Lubricantes",
+    "slug": "nevada-lubricantes-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "scheme": "nevadalub",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B132B"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.nevadalubricantes.app"
+    },
+    "android": {
+      "package": "com.nevadalubricantes.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B132B"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-local-authentication",
+      [
+        "expo-image",
+        { "photosPermission": "Permitir acceso a las fotos para subir imágenes de productos." }
+      ]
+    ],
+    "extra": {
+      "supabaseUrl": "SUPABASE_URL_AQUI",
+      "supabaseAnonKey": "SUPABASE_ANON_KEY_AQUI"
+    }
+  }
+}
